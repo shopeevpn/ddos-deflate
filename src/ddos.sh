@@ -64,8 +64,11 @@ load_conf()
 
 ddos_head()
 {
+    clear
+    echo "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
     echo "DDoS-Deflate version 1.3"
-    echo "Copyright (C) 2005, Zaf <zaf@vsnl.com>"
+    echo "Copyright (C) 2005, Zaf <zaf@vsnl.com>"    
+    echo "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
     echo
 }
 
@@ -89,6 +92,9 @@ showhelp()
     echo '-f      | --traffic-list: List bandwidth control rules.'
     echo '-p      | --ports: List port blocking rules.'
     echo '-k      | --kill: Block all ip addresses making more than N connections'
+    echo
+    echo 'Usage example: ddos -v'
+    echo
 }
 
 # Check if super user is executing the
